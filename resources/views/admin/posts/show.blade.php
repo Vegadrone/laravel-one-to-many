@@ -23,7 +23,7 @@
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
-                        <h5 class="fw-bold">Autore:</h5>{{ $post->author }}
+                        <h5 class="fw-bold">Autore:</h5>{{ $post->user->name }}
                     </li>
                     <li class="list-group-item">
                         <h5 class="fw-bold">Creato il:</h5>{{ $post->post_date }}

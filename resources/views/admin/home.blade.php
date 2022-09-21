@@ -16,7 +16,7 @@
 
                     {{ __('You are logged in!') }}
                 </div>
-                   <button class="btn btn-primary font-weight-bold"><a class="text-light" href="{{ route('admin.posts.index') }}">Vai ai post</a></button>
+                  <a class="text-light text-center" href="{{ route('admin.posts.index') }}"> <button class="btn btn-primary font-weight-bold">Vai ai post</button></a>
             </div>
         </div>
     </div>

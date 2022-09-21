@@ -21,7 +21,7 @@
 @enderror
 <div class="mb-3">
     <label for="insert-author" class="form-label">Autore</label>
-    <input value="{{ old('author', $post->author) }}" type="text" value="{{ $post->author }}" name="author"
+    <input value="{{ old('author', $post->user->name) }}" type="text" value="{{ $post->user->name }}" name="author"
         class="form-control" id="insert-author" placeholder="Inserici la serie di cui fa parte il fumetto" required>
 </div>
 @error('author')
