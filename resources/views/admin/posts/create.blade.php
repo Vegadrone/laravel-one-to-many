@@ -2,7 +2,7 @@
 
 @section('title', 'Crea un nuovo Post')
 
-@section('main-content')
+@section('content')
     <div class="container">
         <div class="row justify-content-center">
             <form action="{{ route('admin.posts.store') }}" method="POST">

@@ -12,15 +12,20 @@
                         <th>Post Date</th>
                         <th></th>
                         <th></th>
+                        <th></th>
                     </thead>
                     <tbody>
                         @forelse ($posts as $post)
                             <tr >
                                 <td>{{ $post->id }}</td>
-                                <td>
-                                    <a href="{{ route("admin.posts.show", $post) }}">{{ $post->title }}</a></td>
+                                <td>{{ $post->title }}</td>
                                 <td>{{ $post->author}}</td>
                                 <td>{{ $post->post_date}}</td>
+                                <td>
+                                    <a href="{{ route('admin.posts.show', $post->id) }}">
+                                        <button class="btn btn-sm btn-primary text-light font-weight-bold">Show</button>
+                                    </a>
+                                </td>
                                 <td>
                                     <a href="{{ route('admin.posts.edit', $post->id) }}">
                                         <button class="btn btn-sm btn-success text-light font-weight-bold">Edit</button>

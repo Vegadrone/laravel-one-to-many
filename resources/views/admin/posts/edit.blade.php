@@ -2,7 +2,7 @@
 
 @section('title', 'Modifica un Post')
 
-@section('main-content')
+@section('content')
     <div class="container">
         <div class="row justify-content-center">
             <form action="{{ route('admin.posts.update', $post->id) }}" method="POST">

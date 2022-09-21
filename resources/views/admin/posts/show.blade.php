@@ -2,7 +2,7 @@
 
 @section('title', 'Comic')
 
-@section('main-content')
+@section('content')
     <div class="container p-5">
         <div class="row justify-content-center">
              @if (session('edited'))
@@ -16,7 +16,7 @@
                 </div>
             @endif
             <div class="card col-12" style="width: 18rem;">
-                <img src="{{ $post->post_image}}" class="card-img-top" alt="...">
+                <img src="{{$post->post_image}}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h4 class="card-title fw-bold">{{ $post->title }}</h4>
                     <p class="card-text">{{ $post->post_content }}.</p>
@@ -26,7 +26,7 @@
                         <h5 class="fw-bold">Autore:</h5>{{ $post->author }}
                     </li>
                     <li class="list-group-item">
-                        <h5 class="fw-bold">Creato il:</h5>{{ $post->post_data }}
+                        <h5 class="fw-bold">Creato il:</h5>{{ $post->post_date }}
                     </li>
                 </ul>
             </div>
